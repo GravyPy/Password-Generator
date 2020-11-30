@@ -38,6 +38,8 @@ passwordFile.write(passwordApp + '\n' + password + '\n' + '\n')
 time.sleep(2)
 print("File Saved")
 time.sleep(1.5)
+print("Password for " + passwordApp + " is " + password)
+time.sleep(4)
 # Thank You
 print("Thank You For Using The GravyGen")
 time.sleep(1.5)
