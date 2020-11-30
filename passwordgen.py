@@ -5,7 +5,7 @@ import os
 import os.path
 
 # Defining All Possible Characters
-chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-./:;<=>?@[\]^_`{|}~0123456789"
+chars = string.ascii_letters + string.punctuation  + string.digits
 
 # Creates Empty Password Variable to Be Filled Later
 password = ''
@@ -34,7 +34,7 @@ time.sleep(2)
 print("Creating File")
 # Creates File on Users Desktop to Store Passwords
 passwordFile = open(os.path.expanduser(os.path.join('~/Desktop/Passwords.txt')), "a")
-passwordFile.write(passwordApp + "\n" + password + "\n")
+passwordFile.write(passwordApp + '\n' + password + '\n' + '\n')
 time.sleep(2)
 print("File Saved")
 time.sleep(1.5)
